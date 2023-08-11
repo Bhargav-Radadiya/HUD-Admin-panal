@@ -1,0 +1,23 @@
+
+
+
+
+#chart,
+
+
+#chart {
+  max-width: 280px;
+  margin: 25px auto;
+}
+
+
+
+p {
+  margin: 10px 0;
+}
+@media only screen and (max-width: 480px) {
+  .actions {
+    margin-top: 0;
+    left: 0;
+  }
+}

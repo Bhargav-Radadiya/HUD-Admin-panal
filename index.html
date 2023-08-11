@@ -1,0 +1,1516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HUD Admin Panel</title>
+  <link rel="shortcut icon" href="assets/img/connection (1).png" type="image/x-icon">
+  <!-- fonts -->
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <!-- fontawesome  -->
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <!-- cosutom stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- bootstrapcss -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/piechart.css">
+  <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="assets/css/column.css">
+
+  <link rel="stylesheet" href="assets/css/chart-3.css">
+  <link rel="stylesheet" href="assets/css/chart-4.css">
+  
+ 
+
+  <link rel="stylesheet" href="assets/css/chart-5.css">
+
+  <!-- col-12 sub-round-1 -->
+  <link rel="stylesheet" href="assets/css/roundchart.css">
+
+  <link rel="stylesheet" href="assets/css/chartlong.css">
+
+</head>
+
+<body>
+  <!-- nav start -->
+  <nav class="navbar position-sticky navbar-dark ">
+    <div class="container-fluid">
+      <button class="bg-dark navbar-toggler " type="button">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+      <div class="logo ms-4">
+        <span class="text-green">H</span>
+      </div>
+      <span class="hud text-white ps-3">HUD ADMIN</span>
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+      <div class="icon d-flex text-white align-items-center justify-content-center">
+        <i class="fa-solid fa-magnifying-glass pe-4 fs-5"></i>
+        <i class="fa-regular fa-rectangle-list pe-4 fs-5 "></i>
+        <div class="bell">
+          <i class="fa-regular fa-bell pe-4 fs-4"></i>
+        </div>
+
+      </div>
+      <img src="assets/img/profile.jpg" width="32px" alt="">
+      <span class=" name text-white px-2">username@account.com</span>
+
+    </div>
+    </div>
+  </nav>
+  <!-- nav end -->
+
+  <!-- header start  -->
+  <section class="main px-3">
+    <div class="row">
+      <div class="d-none d-lg-flex col-3 col-lg-2  header-menu">
+        <div class="menu">
+          <p class="text-gray py-2 m-0 ">Navigation</p>
+          <ul class="p-0">
+            <li>
+              <a class="text-white fs-14 ps-2" href="#">
+                <i class="fa-solid fa-gauge text-green pe-3"></i>
+                Dashboard
+              </a>
+            </li>
+            <li>
+              <a class="text-gray fs-6 ps-2" href="#">
+                <i class="fa-solid fa-chart-simple  pe-3"></i>
+                Analytics
+              </a>
+            </li>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item p-0">
+                <h2 class="accordion-header" id="heading15">
+                  <button class="accordion-button text-gray p-0 ps-2 pt-2 pb-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse15" aria-expanded="false" aria-controls="collapse15">
+                    <i class="fa-solid fa-envelope pe-3"></i>
+                    Email
+                  </button>
+                </h2>
+                <div id="collapse15" class="accordion-collapse collapse  " data-bs-parent="#accordionExample">
+                  <ul>
+                    <li>
+                      <a class="text-gray  ps-2" href="#">Inbox</a>
+                    </li>
+                    <li>
+                      <a class="text-gray ps-2" href="#">Compose</a>
+                    </li>
+                    <li>
+                      <a class="text-gray ps-2" href="#">Detail</a>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+              <p class="text-gray py-2 m-0 ">Components</p>
+              <ul class="p-0">
+                <li class="pt-2">
+                  <a class="text-gray fs-14 ps-2" href="#">
+                    <i class="fa-solid fa-table-columns pe-3"></i>
+                    Widgets
+                  </a>
+                </li>
+                <div class="accordion-item p-0">
+                  <h2 class="accordion-header text-gray" id="heading11">
+                    <button class="accordion-button text-gray p-0 ps-2 pt-2" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                      <i class="fa-solid fa-square-check pe-3"></i>
+                      POS System
+                    </button>
+                  </h2>
+                  <div id="collapse11" class="accordion-collapse collapse pt-2" data-bs-parent="#accordionExample">
+                    <ul>
+                      <li>
+                        <a class="text-gray  ps-2" href="#">Customer Order</a>
+                      </li>
+                      <li>
+                        <a class="text-gray ps-2" href="#">Kitchen Order</a>
+                      </li>
+                      <li>
+                        <a class="text-gray ps-2" href="#">Counter Checkout</a>
+                      </li>
+                      <li>
+                        <a class="text-gray ps-2" href="#">Table Booking</a>
+                      </li>
+                      <li>
+                        <a class="text-gray ps-2" href="#">Menu Stock</a>
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+              </ul>
+              <div class="accordion-item p-0">
+                <h2 class="accordion-header" id="heading12">
+                  <button class="accordion-button collapsed  text-gray p-0 ps-2 pt-3" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapse12" aria-expanded="false"
+                    aria-controls="collapse12">
+                    <i class="fa-solid fa-gamepad pe-3"></i>
+                    UI Kits
+                  </button>
+                </h2>
+                <div id="collapse12" class="accordion-collapse collapse   pt-2" data-bs-parent="#accordionExample">
+                  <ul>
+                    <li>
+                      <a class="text-gray  ps-2" href="#">Bootstrap</a>
+                    </li>
+                    <li>
+                      <a class="text-gray ps-2" href="#">Buttons</a>
+                    </li>
+                    <li>
+                      <a class="text-gray ps-2" href="#">Card</a>
+                    </li>
+                    <li>
+                      <a class="text-gray ps-2" href="#">Icons</a>
+                    </li>
+                    <li>
+                      <a class="text-gray ps-2" href="#">Modal & Notification</a>
+                    </li>
+                    <li>
+                      <a class="text-gray ps-2" href="#">Typography</a>
+                    </li>
+                    <li>
+                      <a class="text-gray ps-2" href="#">Typography</a>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion-item p-0">
+                <h2 class="accordion-header" id="heading16">
+                  <button class="accordion-button collapsed  text-gray p-0 ps-2 pt-3" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapse16" aria-expanded="false"
+                    aria-controls="collapse16">
+                    <i class="fa-solid fa-pen pe-3"></i>
+                    Forms
+                  </button>
+                </h2>
+                <div id="collapse16" class="accordion-collapse collapse   pt-2" data-bs-parent="#accordionExample">
+                  <ul>
+                    <li>
+                      <a class="text-gray  ps-2" href="#">Form Elements</a>
+                    </li>
+                    <li>
+                      <a class="text-gray ps-2" href="#">Form Plugins</a>
+                    </li>
+                    <li>
+                      <a class="text-gray ps-2" href="#">Wizards</a>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion-item p-0">
+                <h2 class="accordion-header" id="heading17">
+                  <button class="accordion-button collapsed  text-gray p-0 ps-2 pt-3" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapse17" aria-expanded="false"
+                    aria-controls="collapse17">
+                    <i class="fa-solid fa-table-cells pe-3"></i>
+                    Tables
+                  </button>
+                </h2>
+                <div id="collapse17" class="accordion-collapse collapse pt-2" data-bs-parent="#accordionExample">
+                  <ul>
+                    <li>
+                      <a class="text-gray  ps-2" href="#">Bootstrap</a>
+                    </li>
+                    <li>
+                      <a class="text-gray ps-2" href="#">Buttons</a>
+                    </li>
+                    <li>
+                      <a class="text-gray ps-2" href="#">Card</a>
+                    </li>
+                    <li>
+                      <a class="text-gray ps-2" href="#">Icons</a>
+                    </li>
+                    <li>
+                      <a class="text-gray ps-2" href="#">Modal & Notification</a>
+                    </li>
+                    <li>
+                      <a class="text-gray ps-2" href="#">Typography</a>
+                    </li>
+                    <li>
+                      <a class="text-gray ps-2" href="#">Typography</a>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion-item p-0">
+                <h2 class="accordion-header" id="heading18">
+                  <button class="accordion-button collapsed  text-gray p-0 ps-2 pt-3" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapse18" aria-expanded="false"
+                    aria-controls="collapse18">
+                    <i class="fa-solid fa-chart-pie pe-3"></i>
+                    Charts
+                  </button>
+                </h2>
+                <div id="collapse18" class="accordion-collapse collapse pt-2" data-bs-parent="#accordionExample">
+                  <ul>
+                    <li>
+                      <a class="text-gray  ps-2" href="#">Chart.js</a>
+                    </li>
+                    <li>
+                      <a class="text-gray ps-2" href="#">Apexcharts.js</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <li class="pt-3">
+                <a class="text-gray px-2 fs-6" href="#">
+                  <i class="fa-solid fa-location-dot"></i>
+                  Map
+                </a>
+              </li>
+              <div class="accordion-item p-0">
+                <h2 class="accordion-header" id="heading19">
+                  <button class="accordion-button collapsed  text-gray p-0 ps-2 pt-2" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapse19" aria-expanded="false"
+                    aria-controls="collapse19">
+                    <i class="fa-solid fa-table-cells-large pe-3"></i>
+                    Layout
+                  </button>
+                </h2>
+                <div id="collapse19" class="accordion-collapse collapse pt-2" data-bs-parent="#accordionExample">
+                  <ul>
+                    <li>
+                      <a class="text-gray  ps-2" href="#">Starter Page</a>
+                    </li>
+                    <li>
+                      <a class="text-gray ps-2" href="#">Fixed Footer</a>
+                    </li>
+                    <li>
+                      <a class="text-gray ps-2" href="#">Full Height</a>
+                    </li>
+                    <li>
+                      <a class="text-gray ps-2" href="#">Full Width</a>
+                    </li>
+                    <li>
+                      <a class="text-gray ps-2" href="#">Boxed Layout</a>
+                    </li>
+                    <li>
+                      <a class="text-gray ps-2" href="#">Collapsed Sidebar</a>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+              <div class="accordion-item p-0">
+                <h2 class="accordion-header" id="heading10">
+                  <button class="accordion-button collapsed  text-gray p-0 ps-2 pt-3" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="false"
+                    aria-controls="collapse10">
+                    <i class="fa-solid fa-file pe-3"></i>
+                    Pages
+                  </button>
+                </h2>
+                <div id="collapse10" class="accordion-collapse collapse pt-2" data-bs-parent="#accordionExample">
+                  <ul>
+                    <li>
+                      <a class="text-gray  ps-2" href="#">Scrum Board</a>
+                    </li>
+                    <li>
+                      <a class="text-gray ps-2" href="#">Products</a>
+                    </li>
+                    <li>
+                      <a class="text-gray ps-2" href="#">Product Details</a>
+                    </li>
+                    <li>
+                      <a class="text-gray  ps-2" href="#">Orders</a>
+                    </li>
+                    <li>
+                      <a class="text-gray ps-2" href="#">Order Details</a>
+                    </li>
+                    <li>
+                      <a class="text-gray ps-2" href="#">Gallery</a>
+                    </li>
+                    <li>
+                      <a class="text-gray  ps-2" href="#">Search Results</a>
+                    </li>
+                    <li>
+                      <a class="text-gray ps-2" href="#">Coming Soon Page</a>
+                    </li>
+                    <li>
+                      <a class="text-gray ps-2" href="#">404 Error Page</a>
+                    </li>
+                    <li>
+                      <a class="text-gray  ps-2" href="#">Login</a>
+                    </li>
+                    <li>
+                      <a class="text-gray ps-2" href="#">Register</a>
+                    </li>
+                    <li>
+                      <a class="text-gray ps-2" href="#">Messenger</a>
+                    </li>
+                    <li>
+                      <a class="text-gray ps-2" href="#">Data Management</a>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </ul>
+          <p class="text-gray py-2 m-0 ">Users</p>
+          <ul class="p-0 ">
+            </li>
+            <li>
+              <a class="text-gray fs-14 ps-2" href="#">
+                <i class="fa-solid fa-user pe-3"></i>
+                Profile
+              </a>
+            </li>
+            <li>
+              <a class="text-gray fs-14 ps-2" href="#">
+                <i class="fa-solid fa-calendar-days pe-3"></i>
+                Calendar
+              </a>
+            </li>
+            <li>
+              <a class="text-gray fs-14 ps-2" href="#">
+                <i class="fa-solid fa-gear pe-3"></i>
+                Settings
+              </a>
+            </li>
+            <li>
+              <a class="text-gray fs-14 ps-2" href="#">
+                <i class="fa-solid fa-person-shelter pe-3"></i>
+                Helper
+              </a>
+            </li>
+          </ul>
+          <div class="btn mx-2 ">
+            <a href="#">
+              <i class="fa-solid fa-code-branch pe-2"></i>
+              Documentation
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="col-12 col-lg-10">
+        <section>
+          <div class="dashbord">
+            <div class="d-flex flex-wrap">
+              <div class=" col-12 col-md-6 col-lg-3 p-2">
+                <div class="frame">
+                  <div class="card">
+                    <div class="card-body py-2  px-3">
+                      <h5 class="card-title d-flex ck text-gray  justify-content-between align-items-center">
+                        SITE VISITORS
+                        <i class="fa-solid fa-expand"></i>
+                      </h5>
+                      <h6 class="card-subtitle mb-2 pt-3 ck text-white">4.2m
+                        <div id="chart">
+                        </div>
+                        <div>
+                          <div id="app">
+                            <div id="column">
+                              <apexchart type="bar" height="350" :options="chartOptions" :series="series"></apexchart>
+                            </div>
+                          </div>
+                        </div>
+                      </h6>
+                      <ul class="pt-2 p-0">
+                        <li class="text-gray">
+                          <i class="fa-solid fa-angle-up pe-2"></i>
+                          33.3% more than last week
+                        </li>
+                        <li class="text-gray">
+                          <i class="fa-regular fa-user pe-2"></i>
+                          45.5% new visitors
+                        </li>
+                        <li class="text-gray ">
+                          <i class="fa-regular fa-circle-xmark pe-2"></i>
+                          3.25% bounce rate
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class=" col-12 col-md-6 col-lg-3  p-2">
+                <div class="frame">
+                  <div class="card">
+                    <div class="card-body py-2  px-3">
+                      <h5 class="card-title d-flex ck text-gray  justify-content-between align-items-center">
+                        STORE SALES
+                        <i class="fa-solid fa-expand"></i>
+                      </h5>
+                      <h6 class="card-subtitle mb-2 pt-3 ck text-white">$35.2K
+                        <div id="chart-3">
+                        </div>
+                      </h6>
+                      <ul class="pt-2 p-0">
+                        <li class="text-gray">
+                          <i class="fa-solid fa-angle-up pe-2"></i>
+                          20.4% more than last week
+                        </li>
+                        <li class="text-gray">
+                          <i class="fa-solid fa-bag-shopping pe-2"></i>
+                          33.5% new orders
+                        </li>
+                        <li class="text-gray ">
+                          <i class="fa-solid fa-dollar-sign pe-2"></i>
+                          6.21% conversion rate
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class=" col-12 col-md-6 col-lg-3  p-2">
+                <div class="frame ">
+                  <div class="card">
+                    <div class="card-body py-2  px-3">
+                      <h5 class="card-title d-flex ck text-gray  justify-content-between align-items-center">
+                        NEW MEMBERS
+                        <i class="fa-solid fa-expand"></i>
+                      </h5>
+                      <h6 class="card-subtitle mb-2 pt-3 ck text-white">
+                        <div class="col-6">4,490
+                          <div id="appl">
+                            <div id="chart-5" ref="chart-5">
+                              <apexcharts type="pie" :width="140" :height="140" :options="chartOptions"
+                                :series="series1"></apexcharts>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6">
+                        </div>
+                      </h6>
+                      <ul class="pt-2 p-0">
+                        <li class="text-gray">
+                          <i class="fa-solid fa-angle-up pe-2"></i>
+                          59.5% more than last week
+                        </li>
+                        <li class="text-gray">
+                          <i class="fa-brands fa-facebook-f pe-2"></i>
+                          45.5% from facebook
+                        </li>
+                        <li class="text-gray ">
+                          <i class="fa-brands fa-youtube pe-2"></i>
+                          15.25% from youtube
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class=" col-12 col-md-6  col-lg-3  p-2">
+                <div class="frame ">
+                  <div class="card">
+                    <div class="card-body py-2  px-3">
+                      <h5 class="card-title d-flex ck text-gray  justify-content-between align-items-center">
+                        BANDWIDTH
+                        <i class="fa-solid fa-expand"></i>
+                      </h5>
+                      <h6 class="card-subtitle mb-2 pt-3 ck text-white">4.5TB
+                        <div id="chart-4"></div>
+                      </h6>
+                      <ul class="pt-2 p-0">
+                        <li class="text-gray">
+                          <i class="fa-solid fa-angle-up pe-2"></i>
+                          5.3% more than last week
+                        </li>
+                        <li class="text-gray">
+                          <i class="fa-solid fa-calculator pe-2"></i>
+                          10.5% from total usage
+                        </li>
+                        <li class="text-gray ">
+                          <i class="fa-solid fa-hand-point-up pe-2"></i>
+                          2MB per visit
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- server-start -->
+
+            <div class="map pt-4 d-flex flex-wrap">
+              <div class=" ser col-12 col-lg-6 p-2">
+                <div class="frame frame2">
+                  <div class="card">
+                    <div class="card-body py-4  px-3">
+                      <h5 class="card-title d-flex ck text-gray  justify-content-between align-items-center">
+                        SERVER STATS
+                        <i class="fa-solid fa-expand"></i>
+                      </h5>
+                      <div class="col-12">
+                        <div id="chartlong">
+                        </div>
+                      </div>
+                      <div class="map-content d-flex flex-wrap text-white">
+                        <div class=" col-12 col-md-6 col-lg-6 p-2 d-flex">
+                          <div class="col-4 d-flex align-items-center me-3">
+                            <div id="roundchart">
+                            </div>
+                          </div>
+                          <div class="col-8">
+                            <span class="text-gray ck">DISK USAGE</span>
+                            <h2 class="text-off ck fs-5 pt-1">20.04 / 256 GB</h2>
+                            <div class="progress mt-2">
+                              <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="text-gray">Last updated 1 min ago</span>
+                            <div class="d-flex align-items-center justify-content-between">
+                              <div class="d-flex align-items-center">
+                                <i class="fa-solid fa-circle text-green pe-2"></i>
+                                <span class="text-off s-disc ck">DISK C</span>
+                              </div>
+                              <span class="text-off s-disc ck"> 19.56GB</span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                              <div class="d-flex align-items-center">
+                                <i class="fa-solid fa-circle i pe-2"></i>
+                                <span class="text-off s-disc ck"> DISK D</span>
+                              </div>
+                              <span class="text-off s-disc ck"> 0.50GB</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6 p-2 d-flex">
+                          <div class="col-4 d-flex align-items-center me-3">
+                            <div id="roundendchart">
+                            </div>
+                          </div>
+                          <div class="col-8">
+                            <span class="text-gray ck">BANDWIDTH</span>
+                            <h2 class="text-off ck fs-5 pt-1">83.76GB / 10TB</h2>
+                            <div class="progress mt-2">
+                              <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <span class="text-gray">Last updated 1 min ago</span>
+                            <div class="d-flex align-items-center justify-content-between">
+                              <div class="d-flex align-items-center">
+                                <i class="fa-solid fa-circle text-green pe-2"></i>
+                                <span class="text-off s-disc ck">HTTP</span>
+                              </div>
+                              <span class="text-off s-disc ck">35.47GB</span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                              <div class="d-flex align-items-center">
+                                <i class="fa-solid fa-circle i pe-2"></i>
+                                <span class="text-off s-disc ck"> FTP</span>
+                              </div>
+                              <span class="text-off s-disc ck"> 1.25GB</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- server-end -->
+
+              <!-- traffice-start -->
+              <div class="col-12 col-lg-6 p-2">
+                <div class="frame frame2">
+                  <div class="card">
+                    <div class="card-body py-4  px-3">
+                      <h5 class="card-title d-flex ck text-gray  justify-content-between align-items-center">
+                        TRAFFIC ANALYTICS
+                        <i class="fa-solid fa-expand"></i>
+                      </h5>
+                      <div class="col-12">
+
+                        <!--
+                     Follow me: https://twitter.com/lesa_ns
+                       Check out my other UI experiments here: https://rastasheep.github.io/ui-element-samples
+                    -->
+
+                        <style>
+                          body {
+                            background-color: #292f33;
+                          }
+
+                          world-map {
+                            display: block;
+                            position: relative;
+                            max-width: 900px;
+                            margin: auto;
+                          }
+                        </style>
+
+                        <world-map class="map py-5">
+                          <world-map-location top="28%" left="47%" label="england"></world-map-location>
+                          <world-map-location top="33%" left="48.5%" label="france"></world-map-location>
+                        </world-map>
+                      </div>
+
+                      <div class="map-content d-flex flex-wrap text-white">
+                        <div class="col-12 col-md-6 col-lg-6 p-2 d-flex  ">
+                          <div class="col-6">
+                            <h3 class="text-white pt-1 ck ">COUNTRY</h3>
+                            <p class="m-0 text-gray pt-1 ck ">FRANCE</p>
+                            <p class="m-0 text-gray pt-1 ck">SPAIN</p>
+                            <p class="m-0 text-green pt-1 ck">MEXICO</p>
+                            <p class="m-0 text-gray pt- 1ck">UNITED STATES</p>
+                            <p class="m-0 text-gray pt-1 ck">BELGIUM</p>
+                          </div>
+                          <div class="col-3 ">
+                            <h3 class="text-white pt-1 ck ">VISITS </h3>
+                            <p class="m-0 text-gray pt-1 ck ">13,849 </p>
+                            <p class="m-0 text-gray pt-1 ck">3,216</p>
+                            <p class="m-0 text-green pt-1 ck">1,398</p>
+                            <p class="m-0 text-gray pt- 1ck">1,090 </p>
+                            <p class="m-0 text-gray pt-1 ck">1,045</p>
+                          </div>
+                          <div class="col-3">
+                            <h3 class="text-white pt-1 ck ">PCT% </h3>
+                            <p class="m-0 text-gray pt-1 ck ">40.79% </p>
+                            <p class="m-0 text-gray pt-1 ck">9.79%</p>
+                            <p class="m-0 text-green pt-1 ck">4.26%</p>
+                            <p class="m-0 text-gray pt- 1ck">3.32% </p>
+                            <p class="m-0 text-gray pt-1 ck">3.18%</p>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6 p-2 ">
+                          <div class="frame">
+                            <div class="card">
+                              <div class="card-body d-flex">
+                                <div class="col-4 d-flex align-items-center me-2">
+
+                                  <div id="roundnewchart">
+                                  </div>
+                                </div>
+                                <div class="col-12 col-md-8">
+                                  <div class="d-flex  justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                      <i class="fa-solid fa-circle i1 pe-2"></i>
+                                      <span class="text-gray s-disc ck"> FEED</span>
+                                    </div>
+                                    <span class="text-gray s-disc ck">25.70%</span>
+                                  </div>
+                                  <div class="d-flex justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                      <i class="fa-solid fa-circle i2 pe-2"></i>
+                                      <span class="text-gray s-disc ck">ORGANIC</span>
+                                    </div>
+                                    <span class="text-gray s-disc ck">24.30%</span>
+                                  </div>
+                                  <div class="d-flex justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                      <i class="fa-solid fa-circle i3 pe-2"></i>
+                                      <span class="text-gray s-disc ck">REFERRAL</span>
+                                    </div>
+                                    <span class="text-gray s-disc ck">23.05%</span>
+                                  </div>
+                                  <div class="d-flex justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                      <i class="fa-solid fa-circle i4 pe-2"></i>
+                                      <span class="text-gray s-disc ck">DIRECT</span>
+                                    </div>
+                                    <span class="text-gray s-disc ck">14.85%</span>
+                                  </div>
+                                  <div class="d-flex justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                      <i class="fa-solid fa-circle i5 pe-2"></i>
+                                      <span class="text-gray s-disc ck">EMAIL</span>
+                                    </div>
+                                    <span class="text-gray s-disc ck">7.35%</span>
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="top d-flex flex-wrap pt-4">
+              <div class=" top col-12 col-md-6 col-lg-6 p-2">
+                <div class="frame frame2">
+                  <div class="card">
+                    <div class="card-body  py-4  px-4">
+                      <h5 class="card-title d-flex ck text-gray  justify-content-between align-items-center">
+                        TOP PRODUCTS
+                        <i class="fa-solid fa-expand"></i>
+                      </h5>
+                      <div class="pro ">
+                        <div class="dot pb-3 d-flex justify-content-between">
+                          <div class="col-10  d-flex justify-content-between">
+                            <div class="image d-flex">
+                              <div class="img ">
+                                <h3 class="m-0">1</h3>
+                                <img src="assets/img/product-1.jpeg" width="80px" height="65px" alt="">
+                              </div>
+                              <div class="content ps-3 pt-1">
+                                <div class="box text-off ck mb-1">
+                                  SKU90400
+                                </div>
+                                <h2 class="text-white ck m-0">Huawei Smart Watch</h2>
+                                <p class="text-gray ck m-0">$399.00</p>
+                              </div>
+                            </div>
+                            <div class="no d-flex">
+                              <div class="pe-4">
+                                <p class="text-gray ck m-0 ">QTY:</p>
+                                <p class="text-gray ck m-0">REVENUE:</p>
+                                <p class="text-gray ck m-0">PROFIT:</p>
+                              </div>
+                              <div>
+                                <p class="text-off ck m-0">129</p>
+                                <p class="text-off ck m-0">$51,471</p>
+                                <p class="text-off ck m-0">$15,441
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-2 d-flex justify-content-end align-items-center">
+                            <i class="fa-solid fa-magnifying-glass text-white"></i>
+                          </div>
+                        </div>
+                        <div class="dot  pb-3 d-flex justify-content-between">
+                          <div class="col-10 d-flex justify-content-between">
+                            <div class="image d-flex">
+                              <div class="img ">
+                                <h3 class="m-0">2</h3>
+                                <img src="assets/img/product-2.jpeg" width="80px" height="65px" alt="">
+                              </div>
+                              <div class="content ps-3 pt-1">
+                                <div class="box text-off ck mb-1">
+                                  SKU85999
+                                </div>
+                                <h2 class="text-white ck m-0">Nike Shoes Black Version</h2>
+                                <p class="text-gray ck m-0">$99.00</p>
+                              </div>
+                            </div>
+                            <div class="no d-flex">
+                              <div class="pe-4">
+                                <p class="text-gray ck m-0 ">QTY:</p>
+                                <p class="text-gray ck m-0">REVENUE:</p>
+                                <p class="text-gray ck m-0">PROFIT:</p>
+                              </div>
+                              <div>
+                                <p class="text-off ck m-0">108</p>
+                                <p class="text-off ck m-0">$10,692</p>
+                                <p class="text-off ck m-0">$5,346</p>
+                              </div>
+
+                            </div>
+                          </div>
+                          <div class="col-2 d-flex justify-content-end align-items-center">
+                            <i class="fa-solid fa-magnifying-glass text-white"></i>
+                          </div>
+                        </div>
+                        <div class="dot pb-3 d-flex justify-content-between align-items-center">
+                          <div class="col-10 d-flex justify-content-between">
+                            <div class="image d-flex">
+                              <div class="img ">
+                                <h3 class="m-0">3</h3>
+                                <img src="assets/img/product-3.jpeg" width="80px" height="65px" alt="">
+                              </div>
+                              <div class="content ps-3 pt-1">
+                                <div class="box text-off ck mb-1">
+                                  SKU20400
+                                </div>
+                                <h2 class="text-white ck m-0">White Sony PS4</h2>
+                                <p class="text-gray ck m-0">$599</p>
+                              </div>
+                            </div>
+                            <div class="no d-flex">
+                              <div class="pe-4">
+                                <p class="text-gray ck m-0 ">QTY:</p>
+                                <p class="text-gray ck m-0">REVENUE:</p>
+                                <p class="text-gray ck m-0">PROFIT:</p>
+                              </div>
+                              <div>
+                                <p class="text-off ck m-0">72</p>
+                                <p class="text-off ck m-0">$43,128</p>
+                                <p class="text-off ck m-0"> $4,312 </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-2 d-flex justify-content-end">
+                            <i class="fa-solid fa-magnifying-glass text-white"></i>
+                          </div>
+                        </div>
+                        <div class="dot pb-3 d-flex justify-content-between">
+                          <div class="col-10 d-flex justify-content-between">
+                            <div class="image d-flex">
+                              <div class="img ">
+                                <h4 class="m-0">4</h4>
+                                <img src="assets/img/product-4.jpeg" width="80px" height="65px" alt="">
+                              </div>
+                              <div class="content ps-3 pt-1">
+                                <div class="box text-off ck mb-1">
+                                  SKU19299
+                                </div>
+                                <h2 class="text-white ck m-0">Apple Watch Series 5</h2>
+                                <p class="text-gray ck m-0">$1,099</p>
+                              </div>
+                            </div>
+                            <div class="no d-flex ">
+                              <div class="pe-4">
+                                <p class="text-gray ck m-0 ">QTY:</p>
+                                <p class="text-gray ck m-0">REVENUE:</p>
+                                <p class="text-gray ck m-0">PROFIT:</p>
+                              </div>
+                              <div>
+                                <p class="text-off ck m-0">53</p>
+                                <p class="text-off ck m-0">$58,247</p>
+                                <p class="text-off ck m-0">$2,912</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-2 d-flex align-items-center justify-content-end">
+                            <i class="fa-solid fa-magnifying-glass text-white"></i>
+                          </div>
+                        </div>
+                        <div class="dot  d-flex justify-content-between">
+                          <div class="col-10 d-flex justify-content-between">
+                            <div class="image d-flex">
+                              <div class="img ">
+                                <h4 class="m-0">5</h4>
+                                <img src="assets/img/product-5.jpeg" width="80px" height="65px" alt="">
+                              </div>
+                              <div class="content ps-3 pt-1">
+                                <div class="box text-off ck mb-1">
+                                  SKU19299
+                                </div>
+                                <h2 class="text-white ck m-0">Black Nikon DSLR</h2>
+                                <p class="text-gray ck m-0">1,899</p>
+                              </div>
+                            </div>
+                            <div class="no d-flex ">
+                              <div class="pe-4">
+                                <p class="text-gray ck m-0 ">QTY:</p>
+                                <p class="text-gray ck m-0">REVENUE:</p>
+                                <p class="text-gray ck m-0">PROFIT:</p>
+                              </div>
+                              <div>
+                                <p class="text-off ck m-0">50</p>
+                                <p class="text-off ck m-0">$90,950</p>
+                                <p class="text-off ck m-0">$2,848</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-2 d-flex justify-content-end align-items-center">
+                            <i class="fa-solid fa-magnifying-glass text-white"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-6 p-2 ">
+                <div class="frame frame2">
+                  <div class="card">
+                    <div class="card-body py-4  px-3">
+                      <h5 class="card-title d-flex ck text-gray pb-3 justify-content-between align-items-center">
+                        ACTIVITY LOG
+                        <i class="fa-solid fa-expand"></i>
+                      </h5>
+                      <div class="log py-2 bg-lable px-2 d-flex justify-content-between align-items-center">
+                        <div class="col-8  d-flex justify-content-between">
+                          <div class="d-flex align-items-center">
+                            <i class="fa-solid fa-circle text-green pe-2"></i>
+                            <p class="text-off ck m-0">You have sold an item - $1,299</p>
+                          </div>
+                          <span class="text-off ck m-0"> just now</span>
+                        </div>
+                        <div class="col-3 d-flex justify-content-center">
+                          <div class="btn1 bg-green text-b ck">
+                            PRODUCT
+                          </div>
+                        </div>
+                        <div class="col-1 d-flex justify-content-center">
+                          <i class="fa-solid fa-magnifying-glass text-white  ib"></i>
+                        </div>
+                      </div>
+                      <div class="log py-2  px-2 d-flex justify-content-between align-items-center">
+                        <div class="col-8  d-flex justify-content-between">
+                          <div class="d-flex align-items-center">
+                            <i class="fa-solid fa-circle text-white pe-2"></i>
+                            <p class="text-off ck m-0">Firewall upgrade</p>
+                          </div>
+                          <span class="text-off ck m-0">1 min ago</span>
+                        </div>
+                        <div class="col-3 d-flex justify-content-center">
+                          <div class="btn1 bg-lable text-white ck">
+                            SERVER
+                          </div>
+                        </div>
+                        <div class="col-1 d-flex justify-content-center">
+                          <i class="fa-solid fa-magnifying-glass text-white ib"></i>
+                        </div>
+                      </div>
+                      <div class="log py-2 bg-lable px-2 d-flex justify-content-between align-items-center">
+                        <div class="col-8  d-flex justify-content-between">
+                          <div class="d-flex align-items-center">
+                            <i class="fa-solid fa-circle text-white pe-2"></i>
+                            <p class="text-off ck m-0">Push notification v2.0 installation</p>
+                          </div>
+                          <span class="text-off ck m-0"> 1 min ago</span>
+                        </div>
+                        <div class="col-3 d-flex justify-content-center">
+                          <div class="btn1 bg-lable text-white ck">
+                            ANDROID
+                          </div>
+                        </div>
+                        <div class="col-1 d-flex justify-content-center">
+                          <i class="fa-solid fa-magnifying-glass text-white ib"></i>
+                        </div>
+                      </div>
+                      <div class="log py-2  px-2 d-flex justify-content-between align-items-center">
+                        <div class="col-8  d-flex justify-content-between">
+                          <div class="d-flex align-items-center">
+                            <i class="fa-solid fa-circle text-green pe-2"></i>
+                            <p class="text-off ck m-0">New Subscription - 1yr Plan</p>
+                          </div>
+                          <span class="text-off ck m-0"> 1 min ago</span>
+                        </div>
+                        <div class="col-3 d-flex justify-content-center">
+                          <div class="btn1 text-b bg-green  ck">
+                            SALES
+                          </div>
+                        </div>
+                        <div class="col-1 d-flex justify-content-center">
+                          <i class="fa-solid fa-magnifying-glass text-white ib"></i>
+                        </div>
+                      </div>
+                      <div class="log py-2 bg-lable  px-2 d-flex justify-content-between align-items-center">
+                        <div class="col-8  d-flex justify-content-between">
+                          <div class="d-flex align-items-center">
+                            <i class="fa-solid fa-circle text-lable pe-2"></i>
+                            <p class="text-off ck m-0">2 Unread enquiry</p>
+                          </div>
+                          <span class="text-off ck m-0"> 2 mins ago</span>
+                        </div>
+                        <div class="col-3 d-flex justify-content-center">
+                          <div class="btn1 text-white bg-lable  ck">
+                            ENQUIRY
+
+                          </div>
+                        </div>
+                        <div class="col-1 d-flex justify-content-center">
+                          <i class="fa-solid fa-magnifying-glass text-white ib"></i>
+                        </div>
+                      </div>
+                      <div class="log py-2  px-2 d-flex justify-content-between align-items-center">
+                        <div class="col-8  d-flex justify-content-between">
+                          <div class="d-flex align-items-center">
+                            <i class="fa-solid fa-circle text-green pe-2"></i>
+                            <p class="text-off ck m-0">$30,402 received from Paypal</p>
+                          </div>
+                          <span class="text-off ck m-0">2 mins ago</span>
+                        </div>
+                        <div class="col-3 d-flex justify-content-center">
+                          <div class="btn1 text-b bg-green  ck">
+                            PAYMENT
+                          </div>
+                        </div>
+                        <div class="col-1 d-flex justify-content-center">
+                          <i class="fa-solid fa-magnifying-glass text-white ib"></i>
+                        </div>
+                      </div>
+                      <div class="log py-2 bg-lable px-2 d-flex justify-content-between align-items-center">
+                        <div class="col-8  d-flex justify-content-between">
+                          <div class="d-flex align-items-center">
+                            <i class="fa-solid fa-circle text-green pe-2"></i>
+                            <p class="text-off ck m-0">3 payment received</p>
+                          </div>
+                          <span class="text-off ck m-0"> 5 mins ago</span>
+                        </div>
+                        <div class="col-3 d-flex justify-content-center">
+                          <div class="btn1 text-b bg-green  ck">
+                            PAYMENT
+                          </div>
+                        </div>
+                        <div class="col-1 d-flex justify-content-center">
+                          <i class="fa-solid fa-magnifying-glass text-white ib"></i>
+                        </div>
+                      </div>
+                      <div class="log py-2  px-2 d-flex justify-content-between align-items-center">
+                        <div class="col-8  d-flex justify-content-between">
+                          <div class="d-flex align-items-center">
+                            <i class="fa-solid fa-circle text-b pe-2"></i>
+                            <p class="text-off ck m-0">1 pull request from github</p>
+                          </div>
+                          <span class="text-off ck m-0"> 5 mins ago</span>
+                        </div>
+                        <div class="col-3 d-flex justify-content-center">
+                          <div class="btn1 text-white bg-lable  ck">
+                            GITHUB
+                          </div>
+                        </div>
+                        <div class="col-1 d-flex justify-content-center">
+                          <i class="fa-solid fa-magnifying-glass text-white ib"></i>
+                        </div>
+                      </div>
+                      <div class="log py-2 bg-lable px-2 d-flex justify-content-between align-items-center">
+                        <div class="col-8  d-flex justify-content-between">
+                          <div class="d-flex align-items-center">
+                            <i class="fa-solid fa-circle text-white pe-2"></i>
+                            <p class="text-off ck m-0">3 pending invoice to generate</p>
+                          </div>
+                          <span class="text-off ck m-0"> 5 mins ago</span>
+                        </div>
+                        <div class="col-3 d-flex justify-content-center">
+                          <div class="btn1 text-white bg-lable  ck">
+                            INVOICE
+                          </div>
+                        </div>
+                        <div class="col-1   d-flex justify-content-center">
+                          <i class="fa-solid fa-magnifying-glass text-white ib"></i>
+                        </div>
+                      </div>
+                      <div class="log py-2  px-2 d-flex justify-content-between align-items-center">
+                        <div class="col-8  d-flex justify-content-between">
+                          <div class="d-flex align-items-center">
+                            <i class="fa-solid fa-circle text-b pe-2"></i>
+                            <p class="text-off ck m-0">2 new message from fb messenger</p>
+                          </div>
+                          <span class="text-off ck m-0"> 7 mins ago</span>
+                        </div>
+                        <div class="col-3 d-flex justify-content-center">
+                          <div class="btn1 text-white bg-lable  ck">
+                            INBOX
+                          </div>
+                        </div>
+                        <div class="col-1 d-flex justify-content-center">
+                          <i class="fa-solid fa-magnifying-glass text-white ib"></i>
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+      </div>
+  </section>
+  <!-- header end -->
+
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/apexcharts.js"></script>
+  <script src="assets/js/piechart.js"></script>
+  <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+  <script src="assets/js/column.js"></script>
+  <script src="assets/js/column.min.js"></script>
+  <script src="assets/js/vue-apexcharts.js"></script>
+  <script src="assets/js/vue.min.js"></script>
+  <script src="assets/js/map.js"></script>
+  <script src="assets/js/grow.js"></script>
+
+  <script src="assets/js/line.js"></script>
+  <script src="assets/js/jquery.min.js"></script>
+
+  <script src="assets/js/cdn.jsdelivr.net_npm_vue_dist_vue.js"></script>
+  <script src="assets/js/unpkg.com_apexcharts@3.40.0_dist_apexcharts.js"></script>
+  <script src="assets/js/unpkg.com_vue-apexcharts@1.6.2_dist_vue-apexcharts.js"></script>
+
+  <script src="assets/js/round-chat.js"></script>
+
+  <!-- 1 box col-12 -->
+ <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+
+
+  <!-- box-1 -->
+  <script>
+    const generateValues = (qty) => [...Array(qty).keys()].map((v, i) => Math.floor(Math.random() * 40))
+
+
+
+    var TIME = ['2019-01-01', '2019-01-02', '2019-01-03', '2019-01-04', '2019-01-05', '2019-01-06', '2019-01-07', '2019-01-08', '2019-01-09', '2019-01-10', '2019-01-11', '2019-01-12', '2019-01-13'];
+    var VALUES = generateValues(13);
+
+
+    var options = {
+      chart: {
+        height: 250,
+        width: "160px",
+        type: "line"
+      },
+      series: [
+        {
+          type: 'bar',
+          name: "Series 1",
+          data: VALUES.map((y, i) => ({ y, x: TIME[i] }))
+        }
+      ],
+      xaxis: {
+        type: 'datetime',
+        tickAmount: 1,
+        labels: {
+          rotateAlways: true,
+          minHeight: 180,
+          formatter: function (val, timestamp, opts) {
+            return opts.dateFormatter(new Date(timestamp), 'dd MMM yyyy')
+          }
+        },
+      }
+    };
+
+    var chart = new ApexCharts(document.querySelector("#column"), options);
+
+    chart.render()
+  </script>
+
+  <!-- box-2 -->
+  <script>
+    var options = {
+      annotations: {
+        points: [{
+          x: 10,
+          y: 42,
+          label: {
+            text: '55%'
+          }
+        }, {
+          x: 18,
+          y: 28,
+          label: {
+            text: '15%'
+          }
+        }]
+      },
+      chart: {
+        height: 125,
+        width: "100%",
+        type: "line"
+      },
+      series: [
+        {
+          name: "Series 1",
+          data: [[1, 34], [3.8, 43], [5, 31], [10, 43], [13, 33], [15, 43], [18, 33], [20, 52]]
+        }
+      ],
+      tooltip: {
+        x: {
+          formatter: function (val) {
+            return val.toFixed(1);
+          }
+        }
+      }
+    };
+
+    var chart = new ApexCharts(document.querySelector("#chart-3"), options);
+
+    chart.render();
+  </script>
+
+
+  <!-- box-3 -->
+  <script>
+    Vue.use(VueApexCharts);
+    var app = new Vue({
+      el: '#appl',
+      components: {
+        apexcharts: VueApexCharts,
+      },
+      data: function () {
+        return {
+          series1: [2, 4, 5, 6],
+          labels1: ['a', 'b', 'c', 'd'],
+        }
+      },
+      computed: {
+        chartOptions: function () {
+          return {
+            labels: this.labels1
+          }
+        }
+      },
+      mounted: function () {
+        console.log('mounted()..');
+      }
+    });
+  </script>
+
+  <!-- box-4 -->
+  <script>
+    var options = {
+      chart: {
+        width: 100,
+        type: "donut"
+      },
+      colors: ["#1ab7ea", "#0084ff", "#39539E", "#0077B5"],
+      dataLabels: {
+        enabled: false
+      },
+      series: [76, 67, 61, 90],
+      tooltip: {
+        enabled: true,
+        y: {
+          formatter: function (val) {
+            return val + ".00" + " Rs"
+          },
+          title: {
+            formatter: function (seriesName) {
+              return ''
+            }
+          }
+        }
+      },
+      legend: {
+        show: false
+      }
+    };
+
+    var chart = new ApexCharts(document.querySelector("#chart-4"), options);
+
+    chart.render();
+
+  </script>
+
+
+<script>
+  var options = {
+    chart: {
+      width: 100,
+      type: "donut"
+    },
+    colors: ["#1ab7ea", "#0084ff", "#39539E", "#0077B5"],
+    dataLabels: {
+      enabled: false
+    },
+    series: [76, 67, 61, 90],
+    tooltip: {
+      enabled: true,
+      y: {
+        formatter: function (val) {
+          return val + ".00" + " Rs"
+        },
+        title: {
+          formatter: function (seriesName) {
+            return ''
+          }
+        }
+      }
+    },
+    legend: {
+      show: false
+    }
+  };
+
+  var chart = new ApexCharts(document.querySelector("#roundnewchart"), options);
+
+  chart.render();
+
+</script>
+<!-- 2 box col-12 -->
+  <script>
+    var options = {
+      series: [],
+      chart: {
+        height: 350,
+        type: "bar"
+      },
+      dataLabels: {
+        enabled: false
+      },
+      title: {
+        text: "Ajax Example"
+      },
+      noData: {
+        text: "Loading..."
+      },
+      xaxis: {
+        type: "category",
+        tickPlacement: "on",
+        labels: {
+          rotate: -45,
+          rotateAlways: true
+        }
+      }
+    };
+
+    var chart = new ApexCharts(document.querySelector("#mainchart"), options);
+    chart.render();
+
+    $.getJSON(
+      "https://my-json-server.typicode.com/apexcharts/apexcharts.js/yearly",
+      function (response) {
+        chart.updateSeries([
+          {
+            name: "Sales",
+            data: response
+          }
+        ]);
+
+        $.getJSON(
+          "https://my-json-server.typicode.com/apexcharts/apexcharts.js/yearly2",
+          function (response) {
+            chart.appendSeries({
+              name: "Sales",
+              data: response
+            });
+          }
+        );
+      }
+    );
+  </script>
+
+<!-- 1 box col-12 sub-box -->
+<script>
+  var options = {
+    chart: {
+      width: 100,
+      type: "donut"
+    },
+    colors: ["#1ab7ea", "#0084ff", "#39539E", "#0077B5"],
+    dataLabels: {
+      enabled: false
+    },
+    series: [76, 67, 61, 90],
+    tooltip: {
+      enabled: true,
+      y: {
+        formatter: function (val) {
+          return val + ".00" + " Rs"
+        },
+        title: {
+          formatter: function (seriesName) {
+            return ''
+          }
+        }
+      }
+    },
+    legend: {
+      show: false
+    }
+  };
+
+  var chart = new ApexCharts(document.querySelector("#roundchart"), options);
+
+  chart.render();
+
+</script>
+
+<script>
+  var options = {
+    chart: {
+      width: 100,
+      type: "donut"
+    },
+    colors: ["#1ab7ea", "#0084ff", "#39539E", "#0077B5"],
+    dataLabels: {
+      enabled: false
+    },
+    series: [76, 67, 61, 90],
+    tooltip: {
+      enabled: true,
+      y: {
+        formatter: function (val) {
+          return val + ".00" + " Rs"
+        },
+        title: {
+          formatter: function (seriesName) {
+            return ''
+          }
+        }
+      }
+    },
+    legend: {
+      show: false
+    }
+  };
+
+  var chart = new ApexCharts(document.querySelector("#roundendchart"), options);
+
+  chart.render();
+
+</script>
+
+ <!-- 1 box col-12 -->
+ <script>
+  var options = {
+  series: [],
+  chart: {
+    height: 350,
+    type: "bar"
+  },
+  dataLabels: {
+    enabled: false
+  },
+  title: {
+    text: "Ajax Example"
+  },
+  noData: {
+    text: "Loading..."
+  },
+  xaxis: {
+    type: "category",
+    tickPlacement: "on",
+    labels: {
+      rotate: -45,
+      rotateAlways: true
+    }
+  }
+};
+
+var chart = new ApexCharts(document.querySelector("#chartlong"), options);
+chart.render();
+
+$.getJSON(
+  "https://my-json-server.typicode.com/apexcharts/apexcharts.js/yearly",
+  function(response) {
+    chart.updateSeries([
+      {
+        name: "Sales",
+        data: response
+      }
+    ]);
+
+    $.getJSON(
+      "https://my-json-server.typicode.com/apexcharts/apexcharts.js/yearly2",
+      function(response) {
+        chart.appendSeries({
+          name: "Sales",
+          data: response
+        });
+      }
+    );
+  }
+);
+ </script>
+
+ <script>
+  $(document).ready(function(){
+    $(".navbar-toggler").click(function(){
+      $(".menu").toggle();
+      $(".col-lg-10").toggleClass('add');
+  })
+  })
+ </script>
+
+
+
+
+</body>
+
+</html>
